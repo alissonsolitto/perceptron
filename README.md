@@ -79,9 +79,9 @@ Limiar de ativação que determina a mudança dos estados do neurônio
 	Perceptron p = new Perceptron(2, 4);
 
 	p.setPadrao(new int[,] { { 0, 0,},
-							 { 0, 1,},
-							 { 1, 0,},
-							 { 1, 1} });
+				 { 0, 1,},
+				 { 1, 0,},
+				 { 1, 1} });
 
 	p.setSaida(new int[] { 0, 0, 0, 1 });
 
@@ -94,9 +94,9 @@ Limiar de ativação que determina a mudança dos estados do neurônio
 	Perceptron p = new Perceptron(2, 4);
 
 	p.setPadrao(new int[,] { { 0, 0,},
-							 { 0, 1,},
-							 { 1, 0,},
-							 { 1, 1} });
+				 { 0, 1,},
+				 { 1, 0,},
+				 { 1, 1} });
 
 	p.setSaida(new int[] { 0, 1, 1, 1 });
 
@@ -110,26 +110,26 @@ A == 0 e T == 1
 	p = new Perceptron(25, 2);
 
 	p.setPadrao(new int[,] { { 1, 1, 1, 1, 1, //A
-							   1, 0, 0, 0, 1,
-							   1, 1, 1, 1, 1,
-							   1, 0, 0, 0, 1,
-							   1, 0, 0, 0, 1 },
+				   1, 0, 0, 0, 1,
+				   1, 1, 1, 1, 1,
+				   1, 0, 0, 0, 1,
+				   1, 0, 0, 0, 1 },
 
-							 { 1, 1, 1, 1, 1, //T
-							   0, 0, 1, 0, 0,
-							   0, 0, 1, 1, 0,
-							   0, 0, 1, 0, 0,
-							   0, 0, 1, 0, 0 }
+				 { 1, 1, 1, 1, 1, //T
+				   0, 0, 1, 0, 0,
+				   0, 0, 1, 1, 0,
+				   0, 0, 1, 0, 0,
+				   0, 0, 1, 0, 0 }
 	});
 	
 	p.setSaida(new int[] { 0, 1 });
 	p.Treinar();
 	
 	int res = p.Executar(new int[] { 1, 1, 1, 1, 1, //A
-									 1, 0, 0, 0, 1,
-									 1, 1, 1, 1, 1,
-									 1, 0, 0, 0, 1,
-									 1, 0, 0, 0, 1 } );
+					 1, 0, 0, 0, 1,
+					 1, 1, 1, 1, 1,
+					 1, 0, 0, 0, 1,
+					 1, 0, 0, 0, 1 } );
 
 	string letra = (res > 0 ? "T" : "A");
 	System.Console.WriteLine("Letra: " + letra);
